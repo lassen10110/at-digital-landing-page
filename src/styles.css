@@ -88,7 +88,9 @@
          w-full sm:w-auto md:w-[214px] h-[38px]
          rounded-[4px]
          font-bold text-white text-[14px] leading-[100%] tracking-[-0.28px]
-         uppercase bg-brand-secondary hover:opacity-90;
+         uppercase bg-brand-secondary
+         hover:opacity-90 hover:scale-105
+         transition-transform duration-200 ease-in-out;
   font-family: 'Inter', sans-serif;
 }
 
