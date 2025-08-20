@@ -4,22 +4,23 @@ import Navbar from "./components/Navbar";
 import HeroImage from "./assets/hero_img.png";
 import pc_img from "./assets/pc_img.png";
 import search_img from "./assets/search.png";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
+
 
 
 function App() {
   return (
     <div className="min-h-screen bg-slate-50">
-      {/* Fixed Navbar */}
       <Navbar />
 
-      <main className="pt-[102px]">
-        {/* Hero Section */}
+      <main className="pt-[72px] md:pt-[102px]">
+
+
         <section className="hero-section">
           <div className="hero-container">
-            {/* Background image */}
             <img src={HeroImage} alt="Hero" className="hero-img" />
 
-            {/* Overlay card */}
             <div className="hero-overlay">
               <h1 className="hero-title">
                 We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
@@ -65,14 +66,8 @@ function App() {
               </div>
             </div>
         </section>
-
-        {/* Placeholder content */}
-        <div className="p-8">
-          <h2 className="text-2xl font-bold">Welcome to AT Digital</h2>
-          <p className="mt-2 text-slate-600">
-            Replace this with your Services, About, Contact, and Careers sections.
-          </p>
-        </div>
+        <FAQ />
+        <Footer />        
       </main>
     </div>
   );

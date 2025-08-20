@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'], // custom font
+        sans: ['Inter', 'ui-sans-serif', 'system-ui'], 
         serif: ['Merriweather', 'serif'],
       },
       colors: {
@@ -25,7 +25,13 @@ module.exports = {
           success: "#5EB30B"
         },
       },
-    }
+    },
+    screens: {
+      sm: "375px",   // mobile
+      md: "768px",   // tablet
+      xl: "1200px",  // small desktop
+      "2xl": "1440px" // large desktop
+    },
   },
   plugins: [],
 };
